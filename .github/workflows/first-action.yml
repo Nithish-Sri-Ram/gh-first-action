@@ -1,0 +1,13 @@
+name: First Workflow
+on: workflow_dispatch
+
+jobs:
+  first-job:      #Only this is not a reserved keyword - everything other identifier above and below runs-on are reserved
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello world!"
+      - name: Print Goodbye
+        run: echo "Goodbye!"
+
+# This workflow is simple with one workflow and one job with 2 steps and it does not account to anything much
